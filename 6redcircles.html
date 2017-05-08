@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="600" height="600">
+</canvas>
+<script>
+function draw() {
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	// draw stuff here!
+
+		context.fillStyle = "#ff0000";
+		context.beginPath();
+		context.arc(175,150,150,0,2 *Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle = "#e50000";
+		context.beginPath();
+		context.arc(175,150,125,0,2 *Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle = "#cc0000";
+		context.beginPath();
+		context.arc(175,150,100,0,2 *Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle = "#b20000";
+		context.beginPath();
+		context.arc(175,150,75,0,2 *Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle = "#7f0000";
+		context.beginPath();
+		context.arc(175,150,50,0,2 *Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle = "#660000";
+		context.beginPath();
+		context.arc(175,150,25,0,2 *Math.PI, true);
+		context.closePath();
+		context.fill();
+
+}
+</script>
+</body>
+</html>
